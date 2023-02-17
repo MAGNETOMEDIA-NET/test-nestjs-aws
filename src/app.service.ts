@@ -3,6 +3,6 @@ import { Injectable } from '@nestjs/common';
 @Injectable()
 export class AppService {
   getHello(): string {
-    return 'Hello World! / nestjs + github-action + aws updated';
+    return 'Hello World! / nestjs + github-action + aws success';
   }
 }
