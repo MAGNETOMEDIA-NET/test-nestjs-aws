@@ -41,7 +41,7 @@ name: NestJS-BACKEND-AWS:CI
 on:
   push:
     branches:
-        - main
+      - main
 
 jobs:
   build:
@@ -98,6 +98,7 @@ jobs:
             . ~/.nvm/nvm.sh
             nvm install 18
             npm install -g pm2
+            pm2 kill
             cd ~/test-nestjs-aws
             get pull origin main
             rm -rf node_modules package-lock.json
