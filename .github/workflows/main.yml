@@ -100,7 +100,6 @@ jobs:
             npm install -g pm2
             pm2 kill
             cd ~/test-nestjs-aws
-            touch kamal.txt
             get pull
             rm -rf node_modules package-lock.json
             npm install
