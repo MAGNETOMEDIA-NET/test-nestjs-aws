@@ -66,9 +66,7 @@ jobs:
 
 
   depoly:
-    # needs: [build]
-    # runs-on: ubuntu-latest
-    name: Deploy
+    needs: [build]
     runs-on: ubuntu-latest
 
     steps:
