@@ -81,7 +81,7 @@ jobs:
               curl -o-   https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
               . ~/.nvm/nvm.sh
 
-               nvm instal 18
+               nvm install 18
                npm install -g pm2
                mkdir ~/nestjs-aws
                cd ~/nestjs-aws
