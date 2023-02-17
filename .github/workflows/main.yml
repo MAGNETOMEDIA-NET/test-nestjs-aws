@@ -79,7 +79,7 @@ jobs:
           username:  ${{ secrets.USER }}
           key:  ${{ secrets.KEY }}
           port:  ${{ secrets.PORT }}
-          script: sh ./deploy.sh
+          # script: sh ./deploy.sh
           # script: |
           #     curl -o-   https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
           #     . ~/.nvm/nvm.sh
@@ -94,4 +94,14 @@ jobs:
           #      npm run build
           #      # pm2 restart api
           #      pm2 start dist/main.js --name nestjs-aws
-          #      
+          #   
+          script: |
+            curl -o-   https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+            . ~/.nvm/nvm.sh
+            nvm install 18
+            npm install -g pm2
+            rm -rf node_modules package-lock.json
+            npm install
+            npm run build
+            pm2 start dist/main.js --name nestjs-aws
+
