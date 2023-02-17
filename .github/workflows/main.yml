@@ -100,7 +100,7 @@ jobs:
             . ~/.nvm/nvm.sh
             nvm install 18
             npm install -g pm2
-            cd ~/nestjs-aws
+            cd ~/test-nestjs-aws
             get pull origin main
             rm -rf node_modules package-lock.json
             npm install
