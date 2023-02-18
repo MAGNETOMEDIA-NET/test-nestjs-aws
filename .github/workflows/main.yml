@@ -100,7 +100,7 @@ jobs:
             npm install -g pm2
             pm2 kill
             cd ~/test-nestjs-aws
-            get pull
+            git pull
             rm -rf node_modules package-lock.json
             npm install
             npm run build
